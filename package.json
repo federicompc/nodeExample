@@ -11,7 +11,11 @@
   "author": "fede",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.0.1",
     "express": "^4.17.2",
-    "nodemon": "^2.0.15"
+    "mongoose": "^6.5.2",
+    "mongoose-partial-full-search": "0.0.6",
+    "nodemon": "^2.0.15",
+    "ulid": "^2.3.0"
   }
 }

@@ -1,1 +1,30 @@
-[{"id":1,"name":"Mando","side":"Light","profession":"Mandalorian"},{"id":2,"name":"Bobba Fett","side":"Dark","profession":"Bounty Hunter"},{"id":3,"name":"Obi wan Kenobi","side":"Light","profession":"Jedi Master"},{"id":4,"name":"Darth Sidius","side":"Dark","profession":"Lord Sith"},{"name":"darth Maul","side":"Dark","profession":"Lord Sith","id":6},{"name":"Luke Skywalker","side":"Light","profession":"Jedi Master","id":7},{"name":"Yoda","side":"Light","profession":"Jedi Master","id":8}]
+[
+  { "id": 1, "name": "Mando", "side": "Light", "profession": "Mandalorian" },
+  {
+    "id": 2,
+    "name": "Bobba Fett",
+    "side": "Dark",
+    "profession": "Bounty Hunter"
+  },
+  {
+    "id": 3,
+    "name": "Obi wan Kenobi",
+    "side": "Light",
+    "profession": "Jedi Master"
+  },
+  {
+    "id": 4,
+    "name": "Darth Sidius",
+    "side": "Dark",
+    "profession": "Lord Sith"
+  },
+  { "name": "darth Maul", "side": "Dark", "profession": "Lord Sith", "id": 6 },
+  {
+    "name": "Luke Skywalker",
+    "side": "Light",
+    "profession": "Jedi Master",
+    "id": 7
+  },
+  { "name": "Yoda", "side": "Light", "profession": "Jedi Master", "id": 8 },
+  { "name": "test", "side": "Light", "profession": "Princess", "id": 9 }
+]
