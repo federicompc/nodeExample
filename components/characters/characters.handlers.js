@@ -1,9 +1,9 @@
 const AppError = require("./../../utils/error");
 const fs = require("fs");
 const {
-  createCharacterService,
   getCharactersService,
   searchCharacterService,
+  createCharacterService,
   updateCharacterService,
   deleteCharacterService,
 } = require("./characters.services");
@@ -13,6 +13,7 @@ const writeCh = (data) => {
     console.log(err);
   });
 };
+
 exports.getCharacters = async (req, res, next) => {
   try {
     const character = await getCharactersService(req.query);
@@ -21,6 +22,7 @@ exports.getCharacters = async (req, res, next) => {
     next(err);
   }
 };
+
 exports.searchCharacter = async (req, res, next) => {
   try {
     const { text } = req.params;

@@ -1,8 +1,8 @@
 const { ulid } = require("ulid");
 const {
-  createCharacterDal,
   getCharactersDal,
   searchCharactersDal,
+  createCharacterDal,
   updateCharacterDal,
   deleteCharacterDal,
 } = require("./characters.dal");
