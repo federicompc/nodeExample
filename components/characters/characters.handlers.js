@@ -5,6 +5,7 @@ const {
   getCharactersService,
   searchCharacterService,
   updateCharacterService,
+  deleteCharacterService,
 } = require("./characters.services");
 
 const writeCh = (data) => {
