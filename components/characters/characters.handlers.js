@@ -64,18 +64,14 @@ exports.updateCharacter = async (req, res, next) => {
     next(err);
   }
 };
+
 exports.deleteCharacter = (req, res, next) => {
-  console.log(req.params.id);
-  if (!req.params.id) {
-    return next(new AppError("I can't delete without an ID", 400));
+  try {
+    console.log(req.params.id);
+    if (!req.params.id) {
+      return next(new AppError("I can't delete without an ID", 400));
+    }
+  } catch (err) {
+    next(err);
   }
-  const deleteCharacter = Character.filter(
-    (j) => j.id !== Number(req.params.id)
-  );
-  console.log("updated after delete", deleteCharacter);
-  writeCh(deleteCharacter);
-  res.status(202).json({
-    message: "success",
-    data: deleteCharacter,
-  });
 };
