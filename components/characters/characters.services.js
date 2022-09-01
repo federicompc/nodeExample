@@ -1,25 +1,28 @@
-const { ulid } = require("ulid");
+const { ulid } = require('ulid')
+
 const {
-  getCharactersDal,
-  searchCharactersDal,
-  createCharacterDal,
-  updateCharacterDal,
-  deleteCharacterDal,
-} = require("./characters.dal");
+   getCharactersDal,
+   searchCharactersDal,
+   createCharacterDal,
+   updateCharacterDal,
+   deleteCharacterDal,
+} = require('./characters.dal')
 
 exports.getCharactersService = async (filters) =>
-  await getCharactersDal(filters);
+   await getCharactersDal(filters)
 
 exports.searchCharacterService = async (filters) =>
-  await searchCharactersDal(filters);
+   await searchCharactersDal(filters)
 
 exports.createCharacterService = async (data) => {
-  data.id = `CHA-${ulid()}`;
-  const result = await createCharacterDal(data);
-  return result;
-};
+   data.id = `CHA-${ulid()}`
+   const result = await createCharacterDal(data)
+   return result
+}
 
 exports.updateCharacterService = async (id, data) =>
-  await updateCharacterDal(id, data);
+   await updateCharacterDal(id, data)
 
-exports.deleteCharacterService = async (id) => await deleteCharacterDal(id);
+exports.deleteCharacterService = async (id) => {
+   await deleteCharacterDal(id)
+}
